@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.description = 'SAML IdP (Identity Provider) Library for Ruby'
   s.date = Time.now.utc.strftime("%Y-%m-%d")
   s.files = Dir['app/**/*', 'lib/**/*', 'LICENSE', 'README.md', 'Gemfile', 'saml_idp.gemspec']
-  s.required_ruby_version = '>= 2.2'
+  s.required_ruby_version = '>= 2.1'
   s.license = 'MIT'
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
@@ -59,4 +59,3 @@ section of the README.
   s.add_development_dependency('xmlenc', '>= 0.6.4')
   s.add_development_dependency('appraisal')
 end
-
